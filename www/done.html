@@ -50,7 +50,7 @@
 
 </head>
 
-<body class="grey lighten-3">
+<body class="grey lighten-2">
 
 
     <main>
@@ -60,64 +60,30 @@
             <div class="card">
                 <div class="container">
                     <div class="row">
-                        <h3 class="header light center col s12 blue-text text-darken-4">Report</h3>
+                        <h3 class="header light center col s12 blue-text text-darken-4">Submitted</h3>
 
-                        <p class="center flow-text light col s12">Upload a picture and enter its location to report the problem and help us build a better campus for
-                            you!
+                        <p class="center flow-text light col s12">Thank you for submitting the picture. Suitable action wil be taken soon.</p>
+
+                        <p class="center col s12">
+                            <a href="index.html" class="btn blue"><i class="material-icons left center">keyboard_arrow_left</i>Back</a>
                         </p>
 
-
                     </div>
 
-                    <div class="row">
+                    
 
-                        <!-- <form class="col s12" enctype='multipart/form-data' id="complaint-form"> -->
-                        <form class="col s12" action="http://localhost:3450/complaint/create" method="POST" enctype='multipart/form-data' id="complaint-form">
-
-
-
-
-                            <div class="row">
-                                <div class="file-field input-field col s12">
-                                    <div class="btn blue">
-                                        <span>Image</span>
-                                        <input type="file" name="upload_image">
-                                    </div>
-                                    <div class="file-path-wrapper">
-                                        <input class="file-path validate" type="text" placeholder="Upload file">
-                                    </div>
-                                </div>
-
-                                <div class="input-field col s12">
-                                    <input id="location" type="text" class="validate" name="upload_location">
-                                    <label for="location">Location</label>
-                                </div>
-
-                                <div class="input-field col s12">
-                                    <textarea id="description" class="materialize-textarea" name="upload_description"></textarea>
-                                    <label for="description">Description</label>
-                                </div>
-
-                                <div class="col s12 center">
-                                    <button class="btn waves-effect waves-light btn-large blue" type="submit" >Submit
-                                        <i class="material-icons right">send</i>
-                                    </button>
-                                </div>
-
-                            </div>
-                        </form>
-
-                    </div>
+                    
 
                 </div>
             </div>
-            
-            
+
             <div class="row">
                 <p class="center col s12">
                     <a href="about.html" class="btn blue"><i class="material-icons left center">info</i>About</a>
                 </p>
             </div>
+            <!--  </div>
+            </div> -->
 
 
 
@@ -133,7 +99,24 @@
     <script type="text/javascript">
         app.initialize();
 
-        
+        /* $("#complaint-form").submit(function (e) {
+            e.preventDefault();
+            var formData = new FormData($("#complaint-form").data);
+
+            $.post("http://localhost:3450/complaint/create", formData, function (data) {
+                M.toast({
+                    html: "Submitted!"
+                })
+                alert(data);
+            });
+
+                console.log(formData);
+
+
+            //document.location.reload();
+            
+
+        }); */
     </script>
 </body>
 

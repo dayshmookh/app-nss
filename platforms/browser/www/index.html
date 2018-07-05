@@ -57,54 +57,67 @@
         <div class="container">
             <!-- <div class="row">
                 <div class="col s10 push-s1"> -->
-                    <div class="card">
-                        <h3 class="header light center">Report</h3>
-                        <div class="container">
-                            <p class="center flow-text light">Upload a picture and enter its location to report the problem and help us build a better campus
-                                for you!</p>
+            <div class="card">
+                <div class="container">
+                    <div class="row">
+                        <h3 class="header light center col s12 blue-text text-darken-4">Report</h3>
+
+                        <p class="center flow-text light col s12">Upload a picture and enter its location to report the problem and help us build a better campus for
+                            you!
+                        </p>
+
+
+                    </div>
+
+                    <div class="row">
+
+                        <!-- <form class="col s12" enctype='multipart/form-data' id="complaint-form"> -->
+                        <form class="col s12" action="http://localhost:3450/complaint/create" method="POST" enctype='multipart/form-data' id="complaint-form">
+
+
+
 
                             <div class="row">
-
-                                <form class="col s12" action="#">
-
-
-
-                                    <div class="row">
-                                        <div class="file-field input-field col s12">
-                                            <div class="btn">
-                                                <span>Image</span>
-                                                <input type="file" name="upload_image">
-                                            </div>
-                                            <div class="file-path-wrapper">
-                                                <input class="file-path validate" type="text" placeholder="Upload file">
-                                            </div>
-                                        </div>
-
-                                        <div class="input-field col s12">
-                                            <input id="location" type="text" class="validate" name="upload_location">
-                                            <label for="location">Location</label>
-                                        </div>
-
-                                        <div class="input-field col s12">
-                                            <textarea id="description" class="materialize-textarea" name="upload_description"></textarea>
-                                            <label for="description">Description</label>
-                                        </div>
-
-                                        <div class="col s12 center">
-                                            <button class="btn waves-effect waves-light btn-large" type="submit" name="action">Submit
-                                                <i class="material-icons right">send</i>
-                                            </button>
-                                        </div>
-
+                                <div class="file-field input-field col s12">
+                                    <div class="btn blue">
+                                        <span>Image</span>
+                                        <input type="file" name="upload_image">
                                     </div>
-                                </form>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text" placeholder="Upload file">
+                                    </div>
+                                </div>
+
+                                <div class="input-field col s12">
+                                    <input id="location" type="text" class="validate" name="upload_location">
+                                    <label for="location">Location</label>
+                                </div>
+
+                                <div class="input-field col s12">
+                                    <textarea id="description" class="materialize-textarea" name="upload_description"></textarea>
+                                    <label for="description">Description</label>
+                                </div>
+
+                                <div class="col s12 center">
+                                    <button class="btn waves-effect waves-light btn-large blue" type="submit" >Submit
+                                        <i class="material-icons right">send</i>
+                                    </button>
+                                </div>
 
                             </div>
+                        </form>
 
-                        </div>
                     </div>
-               <!--  </div>
-            </div> -->
+
+                </div>
+            </div>
+            
+            
+            <div class="row">
+                <p class="center col s12">
+                    <a href="about.html" class="btn blue"><i class="material-icons left center">info</i>About</a>
+                </p>
+            </div>
 
 
 
@@ -114,10 +127,13 @@
         </div>
     </main>
     <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
+
+        
     </script>
 </body>
 
