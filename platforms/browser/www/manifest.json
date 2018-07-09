@@ -4,8 +4,8 @@
   "name": "Indafa",
   "short_name": "Indafa",
   "version": "com.dayshmookh.ghrce.nss",
-  "description": "Hello World sample application that responds to the deviceready event.",
-  "author": "PhoneGap Team",
+  "description": "NSS College Student Volunteer app.",
+  "author": "Krushn Dayshmookh",
   "icons": [],
   "start_url": "index.html"
 }

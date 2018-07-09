@@ -2,12 +2,13 @@
 <widget id="com.dayshmookh.ghrce.nss" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Indafa</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        NSS College Student Volunteer app.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="krushndayshmookh@gmail.com" href="http://krushndayshmookh.github.io">
+        Krushn Dayshmookh
     </author>
     <content src="index.html" />
+    <allow-navigation href="*" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
