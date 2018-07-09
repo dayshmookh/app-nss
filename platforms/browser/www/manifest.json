@@ -1,8 +1,8 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "Broomstick",
-  "short_name": "Broomstick",
+  "name": "Indafa",
+  "short_name": "Indafa",
   "version": "com.dayshmookh.ghrce.nss",
   "description": "Hello World sample application that responds to the deviceready event.",
   "author": "PhoneGap Team",
